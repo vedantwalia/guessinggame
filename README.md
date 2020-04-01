@@ -1,5 +1,5 @@
 # Guessing Game
-Date: 2020-03-31, Time: 23:31:25
+Date: 2020-04-01, Time: 15:03:24
 
 Number of lines of code: 
-22
+21
