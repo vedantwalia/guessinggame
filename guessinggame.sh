@@ -3,11 +3,12 @@ read guess
 
 function data {
   local files=$(ls -l | wc -l)-1
-  echo $number
+  echo $files
 }
-while [[ $guess -ne $(data) ]]
+size=$(data)
+while [[ $guess -ne $size ]]
 do
-   if [[ $guess -lt $(data) ]];
+   if [[ $guess -lt $size ]];
    then
         echo "Guess too low, try again!"
     else
@@ -16,5 +17,4 @@ do
     echo "Try again: "
     read guess
 done
-
 echo "Correct answer!!!"
