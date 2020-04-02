@@ -2,7 +2,7 @@ echo "Please guess the number of files in the current directory:"
 read guess
 
 function data {
-  local files = $(ls -l | wc -l)-1
+  local files=$(ls -l | wc -l)-1
   echo $number
 }
 while [[ $guess -ne $(data) ]]
@@ -18,4 +18,3 @@ do
 done
 
 echo "Correct answer!!!"
-}
